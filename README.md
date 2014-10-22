@@ -14,7 +14,7 @@ for that user, and postgres database. The user is made an owner of the database.
 Example usage:
     pgdevdb mytestdb
 
-Pgdeveb also handles deleting users and databases with one flag in the command:
+Pgdeveb also handles deleting users and databases with the `-d` flag in the command before the name:
     pgdevdb -d mytestdb
 
 This command will drop the user and database that we created in the first command.
