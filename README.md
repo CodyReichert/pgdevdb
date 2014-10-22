@@ -1,10 +1,6 @@
 ## pgdevdb
 
-Pgdevdb is a bash script that creates a postgres username (with password) and database
-from one command. This should only be used in development.
-
-The purpose is to be able to create test postgres users and databases on the fly for
-testing and development.
+Pgdevdb is a bash script that creates a postgres database and user (with password) from one command. The purpose is to be able to create test postgres users and databases on the fly for testing and development.
 
 ### Usage
 
