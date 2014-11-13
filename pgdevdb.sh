@@ -12,7 +12,6 @@ while getopts ":d:l:" OPT; do
 	    sudo -u postgres psql -t $OPTARG
 	    exit
             ;;
-        ?)
     esac
 done
 
