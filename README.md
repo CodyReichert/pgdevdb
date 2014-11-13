@@ -23,6 +23,10 @@ in the command before the name:
 This command will drop the user and database that we created in the
 first command.
 
+To login directly to the sql shell of `mytestdb`:
+
+    pgdevdb -l mytestdb
+
 ### Installation
 
 Git clone the repo and add it to your path, or clone the repo and run
