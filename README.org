@@ -1,37 +1,26 @@
 * pgdevdb
 
 Pgdevdb is a bash script that creates a postgres database and user
-(with password) from one command. The purpose is to be able to create
-test postgres users and databases on the fly for testing and
-development.
+(with password) from one command. The purpose is to create
+test postgres users and databases on the fly for quick testing and
+development. To use it, clone the repo and add =pgdevdb.sh= to your path.
 
 ** Usage
 
-Pgdevdb takes on command, and uses the first argument as the postgres
-username, the password for that user, and postgres database. The user
-is made an owner of the database.
-
-Example usage:
+Run =pgdevdb.sh= and the first argument will be the username, user password, and database name.
 
     #+BEGIN_SRC bash
         λ pgdevdb mytestdb
     #+END_SRC
 
-Pgdeveb also handles deleting users and databases with the =-d= flag
-in the command before the name:
+To delete the =mytestdb= user and database we just created, run it with the =-d= flag.
 
     #+BEGIN_SRC bash
         λ pgdevdb -d mytestdb
     #+END_SRC
 
-This command will drop the user and database that we created in the
-first command.
-
-To login directly to the sql shell of =mytestd=:
+To login directly to the sql shell of =mytestdb=:
 
     #+BEGIN_SRC bash
         λ pgdevdb -l mytestdb
     #+END_SRC
-
-** Installation
-    Clone the repo and add the =pgdevdb.sh= to your path.
