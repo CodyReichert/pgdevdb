@@ -17,7 +17,7 @@ Example usage:
         λ pgdevdb mytestdb
     #+END_SRC
 
-Pgdeveb also handles deleting users and databases with the `-d` flag
+Pgdeveb also handles deleting users and databases with the =-d= flag
 in the command before the name:
 
     #+BEGIN_SRC bash
@@ -27,13 +27,11 @@ in the command before the name:
 This command will drop the user and database that we created in the
 first command.
 
-To login directly to the sql shell of `mytestdb`:
+To login directly to the sql shell of =mytestd=:
 
     #+BEGIN_SRC bash
         λ pgdevdb -l mytestdb
     #+END_SRC
 
 ** Installation
-
-Git clone the repo and add it to your path, or clone the repo and run
-it will something like `sh`.
+    Clone the repo and add the =pgdevdb.sh= to your path.
